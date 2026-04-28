@@ -1,10 +1,10 @@
-# 📉 Detecting Regime Change in Financial Time Series
+# Detecting Regime Change in Financial Time Series
 
 A quantitative finance project that identifies **hidden volatility regimes** in Apple (AAPL) stock returns using a **two-state Markov Switching Model**. The analysis models how financial markets alternate between low-volatility and high-volatility states, with a full model improvement pipeline covering stationarity testing, feature engineering, and multicollinearity checks.
 
 ---
 
-## 💡 Core Idea
+## Core Idea
 
 Financial return series do not behave uniformly over time. Periods of calm markets alternate with crisis periods — and the transition between these states is not directly observable. The **Markov Switching Model** treats each regime as a hidden state and estimates:
 
@@ -14,9 +14,11 @@ Financial return series do not behave uniformly over time. Periods of calm marke
 
 $$y_t = \mu_{S_t} + \varepsilon_t, \quad \varepsilon_t \sim \mathcal{N}(0, \sigma^2_{S_t}), \quad S_t \in \{1, 2\}$$
 
+> [Click Here to view the Project](Detecting Regime Change.ipynb)
+
 ---
 
-## 📊 Key Findings
+## Key Findings
 
 Using daily log returns of AAPL from **January 2015 to January 2025**:
 
@@ -31,7 +33,7 @@ Using daily log returns of AAPL from **January 2015 to January 2025**:
 
 ---
 
-## 🔬 What's Covered
+## What's Covered
 
 | Section | Description |
 |---|---|
@@ -50,7 +52,7 @@ Using daily log returns of AAPL from **January 2015 to January 2025**:
 
 ---
 
-## 🏗️ Model Improvement Pipeline
+## Model Improvement Pipeline
 
 The final model is built through a structured data science workflow:
 
@@ -62,7 +64,7 @@ The final model is built through a structured data science workflow:
 
 ---
 
-## 🚀 Deployment Example
+## Deployment Example
 
 The model outputs a real-time regime signal:
 
@@ -79,7 +81,7 @@ else:
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ```bash
 pip install numpy pandas matplotlib seaborn yfinance arch statsmodels scipy plotly
@@ -87,7 +89,7 @@ pip install numpy pandas matplotlib seaborn yfinance arch statsmodels scipy plot
 
 ---
 
-## 🚀 Usage
+## Usage
 
 1. Clone the repository:
    ```bash
@@ -105,7 +107,7 @@ pip install numpy pandas matplotlib seaborn yfinance arch statsmodels scipy plot
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 | Package | Purpose |
 |---|---|
@@ -119,7 +121,7 @@ pip install numpy pandas matplotlib seaborn yfinance arch statsmodels scipy plot
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -129,12 +131,8 @@ pip install numpy pandas matplotlib seaborn yfinance arch statsmodels scipy plot
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This project is for **educational purposes only** and does not constitute financial or investment advice. Model outputs should not be used as the sole basis for trading or portfolio decisions.
 
----
 
-## 📚 Background
-
-This project applies **hidden Markov models** and **Markov switching regression** to financial time series, combining classical econometrics (GARCH, ADF, KPSS) with modern feature engineering to detect latent market regimes in equity return data.
