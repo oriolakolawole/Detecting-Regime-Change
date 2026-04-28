@@ -94,7 +94,7 @@ pip install numpy pandas matplotlib seaborn yfinance arch statsmodels scipy plot
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   cd Detecting-Regime-Change
    ```
 2. Install dependencies (see above).
 3. Open the notebook:
