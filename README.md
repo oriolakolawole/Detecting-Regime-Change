@@ -14,7 +14,7 @@ Financial return series do not behave uniformly over time. Periods of calm marke
 
 $$y_t = \mu_{S_t} + \varepsilon_t, \quad \varepsilon_t \sim \mathcal{N}(0, \sigma^2_{S_t}), \quad S_t \in \{1, 2\}$$
 
-[Click Here to view the Project](Detecting-Regime-Change.ipynb)
+[Click Here to view the Project](Detecting%20Regime%20Change.ipynb)
 
 ---
 
